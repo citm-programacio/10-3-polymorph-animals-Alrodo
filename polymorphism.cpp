@@ -20,7 +20,7 @@ public:
 };
 
 class Cat : public Animal {
-public:
+public: 
     void speak() {
         cout << "Meow!" << endl;
     }
