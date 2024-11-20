@@ -10,6 +10,15 @@ public:
         cout << "No se quin animal soc" << endl;
     }
     virtual ~Animal() {}
+
+    void feed() {
+        char menjar;
+        cout << "The animals are hungry, type + to feed them: " << endl;
+        cin >> menjar;
+        if (menjar == '+') {
+            cout << "You have fed the animals";
+        }
+    }
 };
 
 class Dog : public Animal {
@@ -33,6 +42,8 @@ int main()
 
     Perro->speak();
     Gato->speak();
+
+    Gato->feed();
 
     return 0;
 }
